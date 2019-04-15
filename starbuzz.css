@@ -15,20 +15,36 @@ body {
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
-  width: 420px;
-  float: left;
+  /* margin:           0px 10px 10px 10px; */
+  /* width: 420px; */
+  /* float: left; */
+  display: table-cell;
+  vertical-align: top;
 }
 
 #sidebar {
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 470px;
+  /* margin:           0px 10px 10px 470px; */
   /* width: 280px;
   float: right; */
+  display: table-cell;
+  vertical-align: top;
 
 }
+
+#drinks{
+  background:       #efe5d0 url(images/background.gif) bottom right;
+  font-size:        105%;
+  padding:          15px;
+  /* margin:           0px 10px 10px 470px; */
+  /* width: 280px;
+  float: right; */
+  display: table-cell;
+  vertical-align: top;
+}
+
 
 #footer {
   background-color: #675c47;
@@ -37,7 +53,7 @@ body {
   padding:          15px;
   margin:           10px;
   font-size:        90%;
-  clear: left;
+  /* clear: left; */
 }
 
 h1 {
@@ -72,3 +88,14 @@ margin-left: auto;
 margin-right: auto;
 
 }
+div#tableContianer{
+display: table;
+border-spacing: 10px;
+
+}
+
+div#tablerow{
+  display: table-row;
+  
+  }
+  
