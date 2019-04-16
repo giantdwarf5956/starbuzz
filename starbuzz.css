@@ -9,6 +9,7 @@ body {
   background-color: #675c47;
   margin:           10px;
   height:           108px;
+  /* background-position: 400px,128px; */
 }
 
 #main {
@@ -99,3 +100,41 @@ div#tablerow{
   
   }
   
+
+#picleft{
+  position: absolute;
+  z-index: 2;
+  display:inline-block;
+  background-image: url(images/header.gif);
+  width:300px;
+  height: 108px;
+}
+
+#picright{
+  clear: both;
+  float: right;
+  
+  z-index: 1;
+  display:inline-block;
+  background-image: url(images/header.gif);
+  background-position-x: 300px;
+  width:300px;
+  height: 108px;
+}
+#award{
+position: absolute;
+top:30px;
+left: 365px;
+
+}
+#coupon{
+position:fixed;
+top: 350px;
+left: -90px;
+
+
+}
+#coupon a ,img{
+border:none;
+
+}
