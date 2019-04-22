@@ -7,18 +7,21 @@
   </head> 
 
   <body>
-<!-- 鼠标事件 -->
-    <div id=coupon onmouseover=""><a href="freecoffee.html" title=" CLick to get free coffee">
+
+
+
+
+    <div id=coupon onmouseover="movein()" onmouseout="moveout()" onmousemove=""><a href="freecoffee.html" title=" CLick to get free coffee">
       <img src="images/ticket.gif" alt="starbuzz freecoffee ticket">
     </a></div>
   <div id=award>
       <img src="images/award.gif" alt="Starbuzz Coffee header image">
   </div>
-    <div id="header">
+    <header>
       <span id="picleft"></span>
       <span id="picright"></span>
       <!-- <img src="images/header.gif" alt="Starbuzz Coffee header image"> -->
-    </div>
+    </header>
 
     <div id =tableContianer>
       <div id=tablerow>
@@ -88,8 +91,8 @@
       the Starbuzz Coffee experience home.
     </p>
     </div>
-    <div id="sidebar">
-    <p class="beanheading">
+    <aside>
+      <p class="beanheading">
       <img src="images/bag.gif" alt="Bean Machine bag">
       <br>
       ORDER ONLINE
@@ -101,14 +104,14 @@
           FRESH <br>
           TO YOUR DOOR <br>
       </span>
-    </p>
-    <p>
+      </p>
+      <p>
       Why wait?  You can order all our fine coffees right from the Internet with our new, 
       automated Bean Machine.  How does it work?  Just click on the Bean Machine link, 
       enter your order, and behind the scenes, your coffee is roasted, ground 
       (if you want), packaged, and shipped to your door.
     </p>
-    </div>
+  </aside>
 
 
       </div>
@@ -116,13 +119,38 @@
 
     </div>
 
-     <div id="footer">
+     <footer>
       &copy; 2012, Starbuzz Coffee
       <br>
       All trademarks and registered trademarks appearing on 
       this site are the property of their respective owners.
-      </div>
+     </footer>
   
+    
+	
+
+      <!-- 鼠标事件 -->
+<script>
+	//显示图片
+	function moveout() {
+		var img = document.getElementById("coupon");
+	
+ 
+		img.style.left =700;
+	
+		// img.style.display = "block";
+	}
+	//图片消失
+	function movein(){
+    var img = document.getElementById("coupon");
+		// var x = event.clientX + document.body.scrollLeft + 20;
+		// var y = event.clientY + document.body.scrollTop - 5; 
+ 
+		img.style.left =  -300;
+	
+		img.style.display = "block";
+	}
+</script>
 
   </body>
 </html>
